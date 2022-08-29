@@ -1,0 +1,3 @@
+git status // verifica el estado git 
+
+git init // crea un respositorio

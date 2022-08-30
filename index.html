@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet"> 
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
   <header class="navbar">
     <div class="navbar__container">
-      <div class="navbar__logo">
+      <!-- <div class="navbar__logo">
         <a class="navbar__link" href="#">
           <i class='bx bx-expand-horizontal navbar__icon'></i>
           <span class="navbar__name">Nombre</span>
         </a>
-      </div>
+      </div> -->
       <div id="menu" class="navbar__menu">
         <i id="btnClose" class='bx bx-x navbar__icon btn--close'></i>
         <nav class="navbar__list">
           <a class="navbar__link" href="#">Home</a>
-          <a class="navbar__link" href="#about">About</a>
-          <a class="navbar__link" href="#services">Services</a>
-          <a class="navbar__link" href="#projects">Projects</a>
-          <a class="navbar__link" href="#contact">Contact</a>
+          <a class="navbar__link" href="#services">Servicios</a>
+          <a class="navbar__link" href="#about">Acerca de mí</a>
+          <a class="navbar__link" href="#skills">Mis habilidades</a>
+          <a class="navbar__link" href="#briefcase">Mi portafolio</a>
+          <a class="navbar__link" href="#contact">Contacto</a>
         </nav>
       </div>
       <div class="navbar__button">
@@ -34,12 +38,12 @@
   </header>
 
   <main class="wrapper">
-    <section id="about" class="about">
-      <h2 class="about__title">About</h2>
+    <section id="services" class="services">
+      <h2 class="services__title">servicios</h2>
     </section>
 
-    <section id="services" class="services">
-      <h2 class="services__title">Services</h2>
+    <section id="about" class="about">
+      <h2 class="about__title">acerca de mí</h2>
     </section>
   </main>
   <script>

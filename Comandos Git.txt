@@ -1,3 +1,17 @@
 git status // verifica el estado git 
 
 git init // crea un respositorio
+
+git add . //agrega los archivos al repositorio
+
+git commit -m "mi primer commit" // se le asigna un nombre a la version
+
+git commit -am "mi primer commit" //abrevia en uno solo los dos comando anteriores
+
+git log --oneline //para ver las versiones que tengo
+
+git remote add origin (y la direccion de la pagina de github) //agrega el repositorio en la pagina de github
+
+git push -u origin main //pone el proyecto en la rama Main
+
+

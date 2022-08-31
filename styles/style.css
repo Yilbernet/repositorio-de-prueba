@@ -67,7 +67,6 @@ h2 {
   align-items: center;
   width: 100%;
   height: inherit;
-  justify-content: space-between;
 }
 
 .navbar__logo {
@@ -100,9 +99,10 @@ h2 {
 }
 
 .navbar__button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  margin-right: 1rem;
 }
 
 .btn--close,
@@ -140,8 +140,8 @@ h2 {
   .btn--close {
     color: #aaa;
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 10px;
+    right: 10px;
   }
 }
 

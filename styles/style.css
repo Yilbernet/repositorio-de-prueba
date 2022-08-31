@@ -9,8 +9,8 @@
 :root {
   --navbar-height: 60px;
   --color-blue: #34b0be;
-  --color-red: #ff4f6f;
-  --color-black: #ef9919;
+  --color-pink: #ff4f6f;
+  --color-black: #252525;
   --color-dark-gray: #adadad;
   --color-light-gray: #e5e5e5;
   --color-white: #ffffff;
@@ -44,7 +44,7 @@ img {
 
 section {
   height: 100vh;
-  border: 2px dashed #f0f0f0;
+  /* border: 2px dashed #f0f0f0; */
 }
 
 h2 {
@@ -58,7 +58,7 @@ h2 {
   width: 100%;
   height: var(--navbar-height);
   background-color: #fff;
-  box-shadow: 0px 0px 15px -3px #00000042;
+  /* box-shadow: 0px 0px 15px -3px #00000042; */
 }
 
 .navbar__container {
@@ -69,31 +69,28 @@ h2 {
   height: inherit;
 }
 
-.navbar__logo {
-  padding-left: .5rem;
-}
-
 .navbar__link {
   display: flex;
   align-items: center;
   gap: .25rem;
   text-decoration: none;
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
 }
 
 .navbar__icon {
-  font-size: 1.2rem;
-}
-
-.navbar__name {
-  color: #000;
+  font-size: 1.5rem;
+  color: var(--color-blue);
 }
 
 .navbar__menu {
   width: 100%;
   background-color: #fff;
+  text-align: center;
 }
 
 .navbar__list {
+  /* border: 1px blue solid; */
   display: flex;
   gap: .5rem;
 }
@@ -105,13 +102,17 @@ h2 {
   margin-right: 1rem;
 }
 
+a:hover {
+  color:var(--color-blue);
+}
+
 .btn--close,
 .btn--open {
   cursor: pointer;
 }
 
-/* hasta los 500, 0 - 500 */
-@media (max-width: 400px) {
+/* hasta los 549, 0 - 549 */
+@media (max-width: 549px) {
 
   body {
     font-size: 16px;
@@ -119,7 +120,7 @@ h2 {
 
   .navbar__menu {
     position: absolute;
-    top: -400%;
+    top: -500%;
     width: 100%;
     background-color: #fff;
     border-radius: 0 0 20px 20px;
@@ -137,8 +138,11 @@ h2 {
     align-items: center;
   }
 
+  .navbar__link {
+    font-size: 18px;
+  }
+
   .btn--close {
-    color: #aaa;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -149,8 +153,8 @@ h2 {
   margin-top: var(--navbar-height);
 }
 
-/* désde 500px, 500 ... */
-@media (min-width: 400px) {
+/* désde 550px, 550 ... */
+@media (min-width: 550px) {
 
   body {
     font-size: 18px;
@@ -161,9 +165,14 @@ h2 {
   }
 
   .navbar__list {
-    justify-content: center;
-    align-items: center;
+    margin-left: 300px;
+    margin-right: 100px;
+    justify-content: space-around;
     gap: 1rem;
+  }
+
+  .navbar__link {
+    font-size: 18px;
   }
 
   .navbar__button {

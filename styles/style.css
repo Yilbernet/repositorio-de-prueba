@@ -27,7 +27,7 @@ html {
 
 body {
   font-family: 'Rubik', sans-serif;
-  max-width: 1024px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -37,7 +37,7 @@ img {
 }
 
 section {
-  height: 100vh;
+  /* height: 100vh; */
   border: 2px dashed #f0f0f0;
 }
 
@@ -104,14 +104,6 @@ a:hover {
 .btn--close,
 .btn--open {
   cursor: pointer;
-}
-
-.wrapper {
-  margin: 0;
-}
-
-.home {
-  margin-top: -80px;
 }
 
 /* hasta los 549, 0 - 549 */
@@ -190,5 +182,16 @@ a:hover {
 
   .navbar__button {
     display: none;
+  }
+
+  /* ----- Home Section ----- */
+
+  .wrapper {
+    margin: 0;
+    /* color: var(--color-black); */
+  }
+  
+  .home {
+    margin-top: -80px;
   }
 }

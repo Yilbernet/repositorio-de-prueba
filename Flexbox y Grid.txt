@@ -1,0 +1,34 @@
+display: Flex;
+	justify-content: // Alinea elementos horizontalmente
+	align-items: // Alinea elementos Verticalmente
+	flex-direction: // Define la direccion de los elementos
+Nota: cuando es una columna, justify-content cambia a vertical y align-items a horizontal.
+	 flex-wrap: // trabaja con elementos apretados
+	 wrap: //genera un salto de linea de los elementos hacia abajo
+	 wrap-reverse: genera el salto de linea hacia arriba
+	 align-content: // ajusta la separacion entre varias lineas
+
+Elementos Individuales:
+	align-self: // usa lo mismo que align-items
+	
+Abreviaciones:
+	flex-flow: // Abrevia flex-direction y flex-wrap
+	// acepta un valor de cada una separada por un espacio
+	
+display: grid;
+	grid-column-start: // columna en la que se inicia
+	grid-column-end: // columna en la que se termina
+	// span sirve para pasar la longitud
+	grid-column: 2/6 empieza en dos y termina en seis
+	grid-row-start: // fila en la que se inicia
+	grid-row: 2/6 empieza en dos y termina en seis
+	grid-area: // acepta 4 valores en el siguiente orden: fila-inicio / columna-inicio / fila-fin / columna-fin
+	order: // ordena los elementos
+para crear la grilla:
+	grid-template-columns: crea las columnas
+	grid-template-rows: crea las filas
+	grid-template : filas/columnas
+	
+	fr = unidad de medida para el tamaño de los cuadros
+	
+	z-index 

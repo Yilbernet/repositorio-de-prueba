@@ -114,7 +114,7 @@ a:hover {
   display: none;
 }
 
-.info__title__mobile {
+/* .info__title__mobile {
   grid-area: 3/1/4/2;
   height: 0px;
   line-height: 1.15;
@@ -127,7 +127,7 @@ a:hover {
 
 .info__title__desktop {
   display: none;
-}
+} */
 
 /* ----- configuracion caracteristicas para mobile ----- */
 
@@ -184,7 +184,7 @@ a:hover {
     margin-top: -80px;
   }
 
-  .small__points {
+  .home__points {
     margin-top: 20px;
     margin-left: 10px;
     position: absolute;
@@ -229,6 +229,7 @@ a:hover {
 
   .info__title__mobile {
     grid-area: 3/1/4/2;
+    visibility: visible;
     height: 0px;
     line-height: 1.15;
     font-size: 35px;
@@ -239,7 +240,8 @@ a:hover {
   }
 
   .info__title__desktop {
-    display: none;
+    grid-area: 3/1/4/2;
+    visibility: hidden;
   }
 
   .social-medias {
@@ -291,6 +293,8 @@ a:hover {
     font-size: 15px;
   }
 
+
+
 }
 
 /* ----- configuracion caracteristicas para desktop ----- */
@@ -339,7 +343,7 @@ a:hover {
     margin-top: -80px;
   }
 
-  .small__points {
+  .home__points {
     margin-top: 20px;
     margin-left: 60px;
     margin-bottom: -125px;
@@ -381,6 +385,7 @@ a:hover {
 
   .info__title__desktop {
     grid-area: 2/2/3/3;
+    visibility: visible;
     margin-left: 25px;
     line-height: 1.15;
     font-size: 70px;
@@ -388,7 +393,8 @@ a:hover {
   }
 
   .info__title__mobile {
-    display: none;
+    grid-area: 2/2/3/3;
+    visibility: hidden;
   }
 
   .social-medias {

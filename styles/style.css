@@ -119,6 +119,10 @@ a:hover {
 
 .wrapper {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ----- configuracion caracteristicas para mobile ----- */
@@ -291,6 +295,7 @@ a:hover {
     width: 45px;
     border-radius: 50%;
     font-size: 10px !important;
+    display: none;
   }
 
   .skills {
@@ -303,12 +308,13 @@ a:hover {
   .skill__container {
     /* border: 1px solid blue; */
     display: flex;
-    gap: 25px;
+    justify-content: center;
+    gap: 20px;
   }
 
   .skill__item {
     border: inherit;
-    width: 85px;
+    width: 60px;
   }
 
   .skill__number {
@@ -318,7 +324,7 @@ a:hover {
     font-size: 25px;
     background-color: var(--color-white);
     color: var(--color-blue);
-    box-shadow: -5px 5px 20px -5px var(--color-dark-gray);
+    box-shadow: 0px 0px 30px -5px var(--color-dark-gray);
     text-align: center;
     line-height: 50px;
   }
@@ -471,6 +477,10 @@ a:hover {
     font-size: 18px;
   }
 
+  h2 {
+    margin-left: 25px;
+  }
+
   .btn--close {
     display: none;
   }
@@ -505,7 +515,10 @@ a:hover {
   }
   
   .home {
+    width: 100%;
+    max-width: 1280px;
     margin-top: -80px;
+    margin: 0 auto;
   }
 
   .home__points {
@@ -545,7 +558,7 @@ a:hover {
     grid-area: 1/2/2/3;
     display: flex;
     align-items: flex-end;
-    margin-left: 25px;
+    /* margin-left: 25px; */
     font-size: 40px;
   }
 
@@ -610,21 +623,33 @@ a:hover {
 
   /* ----- Skills Section Desktop ----- */
 
+  .swiper-button {
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    width: 45px;
+    border-radius: 50%;
+    font-size: 10px !important;
+    margin: 0 25px;
+    display: none;
+  }
+
   .skills {
     position: relative;
-    width: 1024px;
+    width: 100%;
+    max-width: 1024px;
     margin: 0 auto;
   }
 
   .skill__container {
     /* border: 1px solid blue; */
     display: flex;
-    justify-content: center;
-    gap: 100px;
+    justify-content: space-evenly;
+    gap: 10px;
   }
 
   .skill__item {
     border: inherit;
+    text-align: center;
     width: 150px;
   }
 
@@ -635,7 +660,7 @@ a:hover {
     font-size: 50px;
     background-color: var(--color-white);
     color: var(--color-blue);
-    box-shadow: -10px 10px 40px -14px var(--color-dark-gray);
+    box-shadow: 0px 0px 50px 0px var(--color-dark-gray);
     text-align: center;
     line-height: 150px;
   }
@@ -659,16 +684,16 @@ a:hover {
 
   .skill__p {
     border: inherit;
-    text-align: center;
-    margin-left: -25%;
-    width: 150%;
+    width: 120%;
+    margin-left: -10%;
   }
 
   /* ----- About Section Desktop ----- */
 
   .about {
     position: relative;
-    width: 1024px;
+    max-width: 1024px;
+    width: 100%px;
     margin: 0 auto;
     margin-top: 50px;
   }
@@ -699,6 +724,7 @@ a:hover {
 
   .about__p {
     border: inherit;
+    margin: 0 25px;
     color: var(--color-dark-gray);
     font-weight: var(--weight-regular);
     font-size: 20px;

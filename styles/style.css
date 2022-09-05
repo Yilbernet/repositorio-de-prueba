@@ -35,12 +35,14 @@ body {
   font-family: 'Rubik', sans-serif;
   font-size: 15px;
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
 }
 
 img {
   max-width: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 section {
@@ -113,6 +115,10 @@ a:hover {
 
 .home__title {
   display: none;
+}
+
+.wrapper {
+  width: 100%;
 }
 
 /* ----- configuracion caracteristicas para mobile ----- */
@@ -279,38 +285,16 @@ a:hover {
 
   /* ----- Skills Section Mobile ----- */
 
-  .swiper {
-    width: 600px;
-    height: 200px;
+  .swiper-button {
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    width: 45px;
+    border-radius: 50%;
+    font-size: 10px !important;
   }
 
-  /* .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff; */
-
-    /* Center slide text vertically */
-    /* display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  } */
-
-  /* .swiper-pagination {
-    width: 100px;
-    height: 100px;
-  } */
-
   .skills {
-    position: relative;
+    /* position: relative; */
     width: 320px;
     margin: 0 auto;
     margin-top: 50px;
@@ -324,7 +308,7 @@ a:hover {
 
   .skill__item {
     border: inherit;
-    width: 100px;
+    width: 85px;
   }
 
   .skill__number {
@@ -424,6 +408,56 @@ a:hover {
     border: inherit;
     font-size: 15px;
     margin-top: -25px;
+  }
+
+  /* ----- Services Section Mobile ----- */
+
+  .services {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .services__container {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    column-gap: 100px;
+  }
+
+  .services__item {
+    border: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .services__img {
+    border: inherit;
+    height: 200px;
+    width: 200px;
+  }
+
+  .services__h3 {
+    border: inherit;
+    margin: 0px;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .services__p {
+    border: inherit;
+    width: 200px;
+    font-weight: var(--weight-regular);
+    color: var(--color-dark-gray);
+    font-size: 20px;
+    line-height: 1.1;
   }
 
 }
@@ -695,6 +729,58 @@ a:hover {
     border: inherit;
     font-size: 15px;
     margin-top: -15px;
+  }
+
+  /* ----- Services Section Desktop ----- */
+
+  .services {
+    position: relative;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .services__container {
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services__item {
+    border: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .services__img {
+    border: inherit;
+    height: 200px;
+    width: 200px;
+  }
+
+  .services__h3 {
+    border: inherit;
+    width: 250px;
+    margin: 0px;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .services__p {
+    border: inherit;
+    width: 200px;
+    font-weight: var(--weight-regular);
+    color: var(--color-dark-gray);
+    font-size: 20px;
+    line-height: 1.1;
   }
 
 }

@@ -42,7 +42,7 @@ body {
 img {
   max-width: 100%;
   width: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 section {
@@ -436,6 +436,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 180px;
   }
 
   .services__img {

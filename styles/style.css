@@ -421,12 +421,12 @@ a:hover {
 
   .services__container {
     /* border: 1px solid blue; */
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    /* column-gap: 100px; */
   }
 
   .services__item {

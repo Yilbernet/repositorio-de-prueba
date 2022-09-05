@@ -426,7 +426,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    column-gap: 100px;
+    /* column-gap: 100px; */
   }
 
   .services__item {

@@ -279,6 +279,16 @@ a:hover {
 
   /* ----- Skills Section Mobile ----- */
 
+  .swiper {
+    width: 600px;
+    height: 200px;
+  }
+
+  /* .swiper-pagination {
+    width: 100px;
+    height: 100px;
+  } */
+
   .skills {
     position: relative;
     width: 320px;

@@ -421,7 +421,6 @@ a:hover {
 
   .services__container {
     /* border: 1px solid blue; */
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -737,6 +736,7 @@ a:hover {
   .services {
     position: relative;
     max-width: 1024px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 50px;
   }

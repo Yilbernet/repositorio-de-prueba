@@ -1,12 +1,15 @@
 
 const swiper = new Swiper('.swiper', {
    // Optional parameters
-   direction: 'vertical',
+   slidesPerView: 1,
+   spaceBetween: 10,
+  //  direction: 'vertical',
    loop: true,
  
    // If we need pagination
    pagination: {
      el: '.swiper-pagination',
+     clickable: true,
    },
  
    // Navigation arrows

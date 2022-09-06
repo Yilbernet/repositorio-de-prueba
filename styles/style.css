@@ -305,21 +305,21 @@ a:hover {
 
   .slide--icon {
     position: absolute;
+    top: 60%;
     padding: 5px;
     background-color: var(--color-pink);
     color: var(--color-white);
     font-size: 25px;
     border-radius: 50%;
     z-index: 5;
+    cursor: pointer;
   }
 
   .btn--left {
-    top: 50%;
     left: 10px;
   }
 
   .btn--right {
-    top: 50%;
     right: 10px;
   }
 
@@ -335,10 +335,10 @@ a:hover {
     display: flex;
     justify-content: start;
     gap: 10px;
+    transition: all 1s ease;
   }
 
-  .skill__container.move {
-    display: flex;
+  .skill__container.active {
     justify-content: end;
   }
 

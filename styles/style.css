@@ -125,6 +125,14 @@ a:hover {
   align-items: center;
 }
 
+.p__end {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: var(--color-blue);
+  font-weight: var(--weight-regular);
+}
+
 /* ----- configuracion caracteristicas para mobile ----- */
 
 /* ----- desde 0 - hasta 549 pixeles ----- */
@@ -338,20 +346,20 @@ a:hover {
     transition: all 1s ease;
   }
 
-  .skill__container.active {
+  .skill__container.move {
     justify-content: end;
   }
 
   .skill__item {
     border: inherit;
-    width: 90px !important;
+    width: 100px !important;
   }
 
   .skill__number {
     border: inherit;
     position: relative;
-    height: 80px;
-    line-height: 80px;
+    height: 90px;
+    line-height: 90px;
     font-size: 25px;
     background-color: var(--color-white);
     color: var(--color-blue);
@@ -363,7 +371,7 @@ a:hover {
     border: inherit;
     position: absolute;
     border-top: 3px solid var(--color-blue);
-    width: 95%;
+    width: 85%;
     top: 0;
     left: 0;
   }
@@ -494,6 +502,85 @@ a:hover {
     color: var(--color-dark-gray);
     font-size: 20px;
     line-height: 1.1;
+  }
+
+  /* ----- Briefcase Section Mobile ----- */
+
+  .briefcase {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .briefcase__container {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .briefcase__item {
+    border: inherit;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 30px -5px var(--color-dark-gray);
+    width: 300px;
+  }
+
+  .briefcase__h3 {
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+  }
+
+  /* ----- Contact Section Mobile ----- */
+
+  .contact {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .contact__container {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contact__item {
+    border: inherit;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 30px -5px var(--color-dark-gray);
+    width: 180px;
+  }
+
+  .contact__img {
+    border: inherit;
+    margin-top: 30px;
+    width: 100px;
+  }
+
+  .contact__h3 {
+    border: inherit;
+    margin: 0;
+  }
+
+  .contact__p {
+    border: inherit;
+    font-weight: var(--weight-regular);
+    color: var(--color-dark-gray);
+    margin-bottom: 20px;
   }
 
 }
@@ -667,6 +754,10 @@ a:hover {
     display: none;
   }
 
+  .slide--icon {
+    display: none;
+  }
+
   .skills {
     position: relative;
     width: 100%;
@@ -703,7 +794,7 @@ a:hover {
     border: inherit;
     position: absolute;
     border-top: 5px solid var(--color-blue);
-    width: 95%;
+    width: 85%;
     top: 0;
     left: 0;
   }
@@ -842,6 +933,87 @@ a:hover {
     color: var(--color-dark-gray);
     font-size: 20px;
     line-height: 1.1;
+  }
+
+  /* ----- Briefcase Section Desktop ----- */
+
+  .briefcase {
+    position: relative;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .briefcase__container {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .briefcase__item {
+    border: inherit;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 30px -5px var(--color-dark-gray);
+    width: 300px;
+  }
+
+  .briefcase__h3 {
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+  }
+
+  /* ----- Contact Section Desktop ----- */
+
+  .contact {
+    position: relative;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .contact__container {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .contact__item {
+    border: inherit;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 30px -5px var(--color-dark-gray);
+    width: 250px;
+  }
+
+  .contact__img {
+    border: inherit;
+    margin-top: 30px;
+    width: 100px;
+  }
+
+  .contact__h3 {
+    border: inherit;
+    /* margin: 0; */
+  }
+
+  .contact__p {
+    border: inherit;
+    font-weight: var(--weight-regular);
+    color: var(--color-dark-gray);
+    margin-bottom: 20px;
   }
 
 }

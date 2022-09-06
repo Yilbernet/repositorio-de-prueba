@@ -2,8 +2,8 @@
 const swiper = new Swiper('.swiper', {
    // Optional parameters
    centeredSlides: true,
-   slidesPerView: 3,
-   spaceBetween: 5,
+   slidesPerView: 1,
+   spaceBetween: 10,
  
    // Navigation arrows
    navigation: {
@@ -11,23 +11,16 @@ const swiper = new Swiper('.swiper', {
      prevEl: '.swiper-button-prev',
    },
 
+   pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+   },
+
    breakpoints: {
-    // when window width is >= 480px
+    // when window width is >= 550px
     550: {
-      slidesPerView: 3,
-      spaceBetween: 30
-      // $('.swiper-wrapper').addClass( "disabled" );
+      slidesPerView: 2,
+      spaceBetween: 20,
     },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 4,
-      spaceBetween: 40
-    }
    }
  });
-
-
-//  $('.swiper-wrapper').addClass( "disabled" );
-
-
-

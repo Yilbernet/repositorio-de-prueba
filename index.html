@@ -59,11 +59,10 @@
         </div>
     </section>
 
-    <section id="skills" class="skills swiper mySwiper">
+    <section id="skills" class="skills swiper">
       <h2 class="skills__title">HABILIDADES</h2>
       <i id="btnLeft" class='bx bx-left-arrow-alt slide--icon btn--left'></i>
       <i id="btnRight" class='bx bx-right-arrow-alt slide--icon btn--right'></i>
-      <!-- class="swiper-wrapper" -->
       <container id="slide" class="skill__container">
         <div class="skill__item swiper-slide">
           <h3 class="skill__number"><div class="skill__progres"></div>95%</h3>
@@ -82,10 +81,6 @@
           <p class="skill__p">Design Systems</p>
         </div>
       </container>
-      <!-- <div class="swiper-pagination"></div>
-      <div class="swiper-button swiper-button-prev"></div>
-      <div class="swiper-button swiper-button-next"></div>
-      <div class="swiper-scrollbar"></div> -->
     </section>
 
     <section id="about" class="about">
@@ -139,27 +134,31 @@
         </div>
       </container>
     </section>
-
-    <section id="briefcase" class="briefcase">
+                                    <!-- mySwiper -->
+    <section id="briefcase" class="briefcase swiper">
       <h2 class="briefcase__title">MI PORTAFOLIO</h2>
-      <container class="briefcase__container">
-        <div class="briefcase__item">
+      <container class="briefcase__container swiper-wrapper">
+        <div class="briefcase__item swiper-slide">
           <img src="./Logos-Imágenes/image 9-1.png" alt="Beauty img" class="briefcase__item__img">
           <h3 class="briefcase__h3">Beauty app</h3>
         </div>
-        <div class="briefcase__item">
+        <div class="briefcase__item swiper-slide">
           <img src="./Logos-Imágenes/image 10.png" alt="Training img" class="briefcase__item__img">
           <h3 class="briefcase__h3">Training</h3>
         </div>
-        <div class="briefcase__item">
+        <div class="briefcase__item swiper-slide">
           <img src="./Logos-Imágenes/Rectangle 58.png" alt="Management img" class="briefcase__item__img">
           <h3 class="briefcase__h3">Management web</h3>
         </div>
-        <div class="briefcase__item">
+        <div class="briefcase__item swiper-slide">
           <img src="./Logos-Imágenes/image 11.png" alt="Management img" class="briefcase__item__img">
           <h3 class="briefcase__h3">Management web</h3>
         </div>
       </container>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button swiper-button-prev"></div>
+      <div class="swiper-button swiper-button-next"></div>
+      <!-- <div class="swiper-scrollbar"></div> -->
     </section>
 
     <section id="contact" class="contact">
@@ -184,6 +183,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./script/swiper-bundle.min.js"></script>
   <!-- <script src="./script/mySwiper.js"></script> -->
-  <!-- <script src="./script/swiper.js"></script> -->
+  <script src="./script/swiper.js"></script>
 </body>
 </html>

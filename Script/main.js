@@ -12,3 +12,11 @@ menu.addEventListener('click', function (event) {
      menu.classList.remove('active')
    }
 })
+
+btnLeft.onclick = function () {
+   slide.classList.remove('move')
+}
+
+btnRight.onclick = function () {
+   slide.classList.add('move')
+}

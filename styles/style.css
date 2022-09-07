@@ -338,7 +338,7 @@ a:hover {
     /* border: 1px solid blue; */
     display: flex;
     justify-content: start;
-    gap: 10px;
+    gap: 15px;
   }
 
   .skill__container.move {
@@ -514,7 +514,7 @@ a:hover {
   .briefcase__container {
     /* border: 1px solid blue; */
     display: flex;
-    margin: 30px 0;
+    margin: 35px 0;
   }
 
   .briefcase__item {
@@ -930,7 +930,7 @@ a:hover {
   .briefcase__container {
     /* border: 1px solid blue; */
     display: flex;
-    margin: 30px 0;
+    margin: 35px 0;
   }
 
   .briefcase__item {

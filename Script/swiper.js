@@ -2,8 +2,9 @@
 const swiper = new Swiper('.swiper', {
    // Optional parameters
    centeredSlides: true,
+   loop: true,
    slidesPerView: 1,
-   spaceBetween: 10,
+   spaceBetween: 15,
  
    // Navigation arrows
    navigation: {
@@ -20,7 +21,7 @@ const swiper = new Swiper('.swiper', {
     // when window width is >= 550px
     550: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 30,
     },
    }
  });

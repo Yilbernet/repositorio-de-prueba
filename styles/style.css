@@ -140,8 +140,8 @@ a:hover {
 
 /* ----- configuracion caracteristicas para mobile ----- */
 
-/* ----- desde 0 - hasta 549 pixeles ----- */
-@media (max-width: 549px) {
+/* ----- desde 0 - hasta 599 pixeles ----- */
+@media (max-width: 599px) {
 
   body {
     font-size: 16px;
@@ -188,7 +188,9 @@ a:hover {
 
   .home {
     position: relative;
-    width: 320px;
+    min-width: 350px;
+    width: 90%;
+    max-width: 450px;
     margin: 0 auto;
     margin-top: -80px;
   }
@@ -324,7 +326,9 @@ a:hover {
 
   .skills {
     position: relative;
-    width: 320px;
+    min-width: 350px;
+    width: 90%;
+    max-width: 450px;
     height: 250px;
     margin: 0 auto;
     margin-top: 50px;
@@ -410,7 +414,9 @@ a:hover {
 
   .about {
     position: relative;
-    width: 320px;
+    min-width: 350px;
+    width: 90%;
+    max-width: 450px;
     margin: 0 auto;
     margin-top: 50px;
   }
@@ -475,7 +481,9 @@ a:hover {
 
   .services {
     position: relative;
-    width: 320px;
+    min-width: 350px;
+    width: 90%;
+    max-width: 450px;
     margin: 0 auto;
     margin-top: 50px;
   }
@@ -483,7 +491,7 @@ a:hover {
   .services__container {
     /* border: 1px solid blue; */
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -528,7 +536,9 @@ a:hover {
 
   .briefcase {
     position: relative;
-    width: 320px;
+    min-width: 350px;
+    width: 90%;
+    max-width: 450px;
     margin: 0 auto;
     margin-top: 50px;
   }
@@ -557,7 +567,9 @@ a:hover {
 
   .contact {
     position: relative;
-    width: 320px;
+    min-width: 350px;
+    width: 90%;
+    max-width: 450px;
     margin: 0 auto;
     margin-top: 50px;
   }
@@ -565,7 +577,7 @@ a:hover {
   .contact__container {
     /* border: 1px solid blue; */
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -604,8 +616,8 @@ a:hover {
 
 /* ----- configuracion caracteristicas para desktop ----- */
 
-/* ----- désde 550px - en adelante ----- */
-@media (min-width: 550px) {
+/* ----- désde 600px - en adelante ----- */
+@media (min-width: 600px) {
 
   body {
     font-size: 18px;
@@ -651,7 +663,8 @@ a:hover {
   .home {
     position: relative;
     /* border: 1px solid blue; */
-    width: 100%;
+    min-width: 700px;
+    width: 90%;
     max-width: 1024px;
     margin: 0 auto;
   }
@@ -775,7 +788,8 @@ a:hover {
 
   .skills {
     position: relative;
-    width: 100%;
+    min-width: 700px;
+    width: 90%;
     max-width: 1024px;
     margin: 0 auto;
   }
@@ -832,8 +846,9 @@ a:hover {
 
   .about {
     position: relative;
+    min-width: 700px;
+    width: 90%;
     max-width: 1024px;
-    width: 100%px;
     margin: 0 auto;
     margin-top: 50px;
   }
@@ -901,8 +916,9 @@ a:hover {
 
   .services {
     position: relative;
+    min-width: 700px;
+    width: 90%;
     max-width: 1024px;
-    width: 100%;
     margin: 0 auto;
     margin-top: 50px;
   }
@@ -957,7 +973,8 @@ a:hover {
 
   .briefcase {
     position: relative;
-    width: 100%;
+    min-width: 700px;
+    width: 90%;
     max-width: 1024px;
     margin: 0 auto;
     margin-top: 50px;
@@ -987,7 +1004,8 @@ a:hover {
 
   .contact {
     position: relative;
-    width: 100%;
+    min-width: 700px;
+    width: 90%;
     max-width: 1024px;
     margin: 0 auto;
     margin-top: 50px;
@@ -996,7 +1014,7 @@ a:hover {
   .contact__container {
     /* border: 1px solid blue; */
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: 40px;

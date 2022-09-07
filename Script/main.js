@@ -14,9 +14,13 @@ menu.addEventListener('click', function (event) {
 })
 
 btnLeft.onclick = function () {
-   slide.classList.remove('move')
+   slide.classList.remove('move'),
+   bubble1.classList.remove('move'),
+   bubble2.classList.remove('move')
 }
 
 btnRight.onclick = function () {
-   slide.classList.add('move')
+   slide.classList.add('move'),
+   bubble1.classList.add('move'),
+   bubble2.classList.add('move')
 }

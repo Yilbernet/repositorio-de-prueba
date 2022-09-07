@@ -42,12 +42,7 @@ body {
 img {
   max-width: 100%;
   width: 100%;
-  /* object-fit: cover; */
 }
-
-/* section {
-  border: 2px dashed #f0f0f0;
-} */
 
 h2 {
   font-weight: var(--weight-semibold);
@@ -330,24 +325,51 @@ a:hover {
   .skills {
     position: relative;
     width: 320px;
+    height: 250px;
     margin: 0 auto;
     margin-top: 50px;
   }
 
   .skill__container {
     /* border: 1px solid blue; */
+    width: 200%;
+    margin-left: -50%;
     display: flex;
-    justify-content: start;
-    gap: 15px;
+    justify-content: center;
+    gap: 20px;
   }
 
-  .skill__container.move {
+  /* .skill__container.move {
     justify-content: end;
+  } */
+
+  .skill__bubble1 {
+    border: inherit;
+    flex: 1;
+    transition: flex 1s;
+    min-width: 0px;
+    max-width: 115px;
+  }
+
+  .skill__bubble1.move {
+    flex: 0;
   }
 
   .skill__item {
     border: inherit;
     width: 90px;
+  }
+
+  .skill__bubble2 {
+    border: inherit;
+    flex: 0;
+    transition: flex 1s;
+    min-width: 0px;
+    max-width: 115px;
+  }
+
+  .skill__bubble2.move {
+    flex: 1;
   }
 
   .skill__number {

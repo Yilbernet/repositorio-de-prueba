@@ -684,39 +684,51 @@ a:hover {
     width: 100%;
     height: 550px;
     display: grid;
-    grid-template: repeat(5, 20%) / repeat(2, 50%) ;
+    grid-template: repeat(5, 20%) / repeat(2, 50%);
+    grid-template-areas:
+     "a b"
+     "a c"
+     "a d"
+     "a e"
+     "a f"
   }
 
   .info__img-fondo {
     position: absolute;
     border: inherit;
-    grid-area: 1/1/6/3;
+    /* grid-area: 1/1/6/3; */
+    grid-area: a;
     width: 400px;
     height: 450px;
     align-self: center;
+    justify-self: end;
   }
 
   .info__img-frente {
     position: absolute;
     border: inherit;
-    grid-area: 1/1/6/3;
+    /* grid-area: 1/1/6/3; */
+    grid-area: a;
     width: 300px;
     height: 480px;
     margin-left: 100px;
     align-self: center;
-    margin-left: 75px;
+    justify-self: end;
+    margin-right: 25px;
     margin-bottom: 70px;
   }
 
   .info__name {
-    grid-area: 1/2/2/3;
+    /* grid-area: 1/2/2/3; */
+    grid-area: b;
     position: absolute;
     font-size: 30px;
     bottom: 40px;
   }
 
   .info__title__desktop {
-    grid-area: 2/2/3/3;
+    /* grid-area: 2/2/3/3; */
+    grid-area: c;
     position: absolute;
     visibility: visible;
     margin-left: 25px;
@@ -726,12 +738,14 @@ a:hover {
   }
 
   .info__title__mobile {
-    grid-area: 2/2/3/3;
+    /* grid-area: 2/2/3/3; */
+    grid-area: c;
     visibility: hidden;
   }
 
   .social-medias {
-    grid-area: 3/2/4/3;
+    /* grid-area: 3/2/4/3; */
+    grid-area: d;
     position: absolute;
     height: 75px;
     width: 330px;
@@ -753,7 +767,8 @@ a:hover {
   }
 
   .mail {
-    grid-area: 4/2/5/3;
+    /* grid-area: 4/2/5/3; */
+    grid-area: e;
     position: absolute;
     display: flex;
     align-items: center;
